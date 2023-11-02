@@ -12,7 +12,8 @@
     <div class="main-sobre">
         <div class="esquerda">
             <h1>AOKI BAGS</h1>
-            <img src="../img/logo_eco-removebg-preview.png" class="logo" alt="sacolas">
+            <a href="../index.php"><img src=../img/logo_eco-removebg-preview.png alt="logo"></a>
+            <!-- <img src="../img/logo_eco-removebg-preview.png" class="logo" alt="sacolas"> -->
         </div>
 
         <div class="sobre-nos">

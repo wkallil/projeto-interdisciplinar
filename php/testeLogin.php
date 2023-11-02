@@ -1,7 +1,26 @@
 <?php
 session_start();
 
-if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_URL => 'https://api.hcaptcha.com/siteverify',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_CUSTOMREQUEST => 'POST',
+    CURLOPT_POSTFIELDS => [
+        'response' => $_POST['h-captcha-response'] ?? '',
+        'secret' => 'ES_e7834026661e42ecb868fc3ddb951845'
+    ]
+]);
+
+$response = curl_exec($curl);
+curl_close($curl);
+
+$responseArray = json_decode($response, true);
+
+$sucesso = $responseArray['success'] ?? false;
+
+if (!empty($_POST['usuario']) && !empty($_POST['senha']) && $sucesso)  {
     //Entrar
     include_once('conn.php');
     $usuario = $_POST['usuario'];

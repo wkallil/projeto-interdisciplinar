@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./php/login.php">
     <link rel="stylesheet" href="./php/cadastro.php">
     <link rel="stylesheet" href="./php/sobrenos.php">
+    <link rel="stylesheet" href="./php/carrinho.php">
+    <link rel="stylesheet" href="./php/adm.php">
     <title>AOKI</title>
 </head>
 
@@ -20,7 +22,7 @@
         <h1>AOKI BAGS</h1>
 
         <div class="logo">
-            <img src="./img/logo_eco-removebg-preview.png" alt="logo loja ecológica">
+            <a href=""><img src="./img/logo_eco-removebg-preview.png" alt="logo loja ecológica"></a>
         </div>
 
         <nav>
@@ -29,7 +31,9 @@
                 <!-- <li><a href="#">Produtos</a></li> -->
                 <li><a href="./php/sobrenos.php">Sobre Nós</a></li>
                 <li><a href="https://www.instagram.com/_aokiart/?theme=dark" target="_blank">Instagram</a></li>
-                <li><a href="./php/login.php">login</a></li>
+                <li><a href="./php/login.php">Login</a></li>
+                <li><a href="./php/carrinho.php">Carrinho</a></li>
+                <li><a href="./php/adm.php">Administração</a></li>
             </ul>
         </nav>
 
@@ -44,9 +48,9 @@
 
     <section class="products">
         <article class="product">
-            <img class="imagem-destaque" src="./img/vulcao.png" alt="Bolsa Ecológica 1">
-            <h2>Bolsa Ecológica 1</h2>
-            <p>Descrição da bolsa ecológica 1.</p>
+            <img class="imagem-destaque" src="./img/vulcao.png" alt="Bolsa Ecológica Vulcão">
+            <h2>Eco Bag Vulcão</h2>
+            <p>Compre sua eco bag modelo vulcão.</p>
             <p class="price">R$ 50,00</p>
             <form action="./php/carrinho.php" method="post">
                 <input type="hidden" name="id" value="item-1">
@@ -59,9 +63,9 @@
         </article>
 
         <article class="product">
-            <img class="imagem-destaque" src="./img/musica.jpg" alt="Bolsa Ecológica 2">
-            <h2>Bolsa Ecológica 2</h2>
-            <p>Descrição da bolsa ecológica 2.</p>
+            <img class="imagem-destaque" src="./img/musica.jpg" alt="Bolsa Ecológica Musica">
+            <h2>Eco Bag Musica</h2>
+            <p>Compre sua eco bag modelo musica.</p>
             <p class="price">R$ 60,00</p>
             <form action="./php/carrinho.php" method="post">
                 <input type="hidden" name="id" value="item-2">
@@ -74,8 +78,8 @@
 
         <article class="product">
             <img class="imagem-destaque" src="./img/vintage.webp" alt="Bolsa Ecológica 3">
-            <h2>Bolsa Ecológica 3</h2>
-            <p>Descrição da bolsa ecológica 3.</p>
+            <h2>Eco Bag Anatomia</h2>
+            <p>Compre sua eco bag modelo anatomia.</p>
             <p class="price">R$ 60,00</p>
             <form action="./php/carrinho.php" method="post">
                 <input type="hidden" name="id" value="item-3">
@@ -88,8 +92,8 @@
 
         <article class="product">
             <img class="imagem-destaque" src="./img/sun.jpg" alt="Bolsa Ecológica 4">
-            <h2>Bolsa Ecológica 4</h2>
-            <p>Descrição da bolsa ecológica 4.</p>
+            <h2>Eco Bag Paisagem</h2>
+            <p>Compre sua eco bag modelo paisagem.</p>
             <p class="price">R$ 60,00</p>
             <form action="./php/carrinho.php" method="post">
                 <input type="hidden" name="id" value="item-4">
@@ -117,14 +121,14 @@
         <h2>Contato</h2>
         <p>Entre em contato conosco para mais informações:</p>
         <ul>
-            <li>Email: contato@ecobags.com</li>
-            <li>Telefone: (11) 1234-5678</li>
+            <li>Email: contato@aokibags.com</li>
+            <li>Telefone: (81) 4002-9822</li>
         </ul>
     </section>
 
 
     <footer>
-        <p>&copy; 2023 Loja de Bolsas Ecológicas</p>
+        <p>&copy; 2023 Loja de Eco Bags AOKI</p>
     </footer>
 </body>
 
